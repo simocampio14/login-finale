@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+  <!-- Collegamento al file CSS per lo stile -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Contenitore del contenuto centrale -->
+  <div class="container">
+    <h1>Registrazione</h1>
+    <!-- Form per creare un nuovo account -->
+    <form action="signup" method="post">
+      <!-- Campo per inserire l'email -->
+      <input type="email" name="email" placeholder="Email" required />
+      <!-- Campo per inserire la password (i caratteri vengono nascosti) -->
+      <input type="password" name="password" placeholder="Password" required />
+      <!-- Bottone per inviare il form e registrarsi -->
+      <button type="submit">Registrati</button>
+    </form>
+    <!-- Link per accedere se si è già registrati -->
+    <p>Sei già registrato? <a href="login">Accedi</a></p>
+  </div>
+</body>
+</html>

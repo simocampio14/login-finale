@@ -1,0 +1,123 @@
+/* Reset base per uniformare stile tra browser */
+* {
+  box-sizing: border-box; /* Include padding e bordi nella dimensione totale */
+  margin: 0;              /* Rimuove margine di default */
+  padding: 0;             /* Rimuove padding di default */
+}
+
+/* Stile generale del body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font moderno e leggibile */
+  background: #f0f4f8;    /* Colore di sfondo chiaro */
+  color: #333;            /* Testo grigio scuro */
+  display: flex;          /* Flexbox per centrare il contenuto */
+  justify-content: center; 
+  align-items: center;
+  height: 100vh;          /* Altezza = tutta la finestra */
+}
+
+/* Stile del contenitore principale */
+.container {
+  background: #ffffff;     /* Sfondo bianco */
+  padding: 2rem 2.5rem;    /* Spazio interno */
+  border-radius: 12px;     /* Angoli arrotondati */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  width: 100%;
+  max-width: 400px;        /* Larghezza massima */
+  text-align: center;      /* Testo centrato */
+}
+
+/* Stile dei titoli */
+h1 {
+  font-size: 2rem;         /* Dimensione titolo */
+  color: #2c3e50;          /* Colore scuro */
+  margin-bottom: 1.5rem;   /* Spazio sotto il titolo */
+}
+
+/* Stile dei paragrafi */
+p {
+  margin-top: 1rem;        /* Spazio sopra il paragrafo */
+  font-size: 1rem;         /* Dimensione normale */
+}
+
+/* Stile dei link */
+a {
+  color: #3498db;          /* Colore blu */
+  text-decoration: none;   /* Niente sottolineatura */
+  font-weight: 500;        /* Spessore medio */
+}
+
+a:hover {
+  text-decoration: underline; /* Sottolineato al passaggio del mouse */
+}
+
+/* Stile dei campi input */
+input[type="email"],
+input[type="password"] {
+  width: 100%;              /* Occupa tutta la larghezza */
+  padding: 0.75rem;         /* Spazio interno */
+  margin-bottom: 1rem;      /* Spazio sotto ogni campo */
+  border: 1px solid #ccc;   /* Bordo grigio chiaro */
+  border-radius: 8px;       /* Angoli arrotondati */
+  font-size: 1rem;          /* Dimensione testo */
+}
+
+/* Stile dei pulsanti */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #3498db;   /* Blu */
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;             /* Cursore a mano */
+  transition: background-color 0.3s ease; /* Effetto transizione al passaggio del mouse */
+}
+
+button:hover {
+  background-color: #2980b9;   /* Cambia tonalità di blu */
+}
+
+/* Colore del titolo nella pagina di benvenuto */
+.welcome-container h1 {
+  color: #27ae60; /* Verde */
+}
+
+/* Stile responsive per schermi piccoli */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Titolo più piccolo su mobile */
+  }
+}
+
+/* Stili per tipi di messaggio */
+.container.error {
+  border-left: 5px solid #e74c3c; /* Bordo rosso per errori */
+}
+
+.container.success {
+  border-left: 5px solid #27ae60; /* Bordo verde per successi */
+}
+
+.container.warning {
+  border-left: 5px solid #f39c12; /* Bordo arancione per avvisi */
+}
+
+/* Cambia colore del titolo in base al tipo di messaggio */
+.container.success h1 {
+  color: #27ae60;
+}
+
+.container.error h1 {
+  color: #e74c3c;
+}
+
+.container.warning h1 {
+  color: #f39c12;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <!-- Link al file CSS per lo stile della pagina -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Contenitore principale -->
+  <div class="container">
+    <h1>Login</h1>
+    <!-- Modulo per l'accesso -->
+    <form action="login" method="post">
+      <!-- Campo per l'email -->
+      <input type="email" name="email" placeholder="Email" required />
+      <!-- Campo per la password -->
+      <input type="password" name="password" placeholder="Password" required />
+      <!-- Pulsante per inviare i dati -->
+      <button type="submit">Accedi</button>
+    </form>
+    <!-- Link per chi non ha un account -->
+    <p>Non sei ancora registrato? <a href="signup">Registrati</a></p>
+    <!-- Link per chi ha dimenticato la password -->
+    <p>Password dimenticata? <a href="reset-password">Cambia password</a></p>
+  </div>
+</body>
+</html>
